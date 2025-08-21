@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Servicing App</title>
+    <style>
+        /* Reset some default styling */
+        body, h1, h2, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Styling for header */
+        header {
+            background-color: #050505;
+            color: #ffffff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        /* Styling for main content */
+        body {
+            background-color: #fffefe;
+            background-image: url(https://png.pngtree.com/background/20220730/original/pngtree-car-service-illustration-repair-auto-picture-image_1882362.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        /* Styling for the service form */
+        .service-form-container {
+            background-color: #fafafa;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            margin: auto;
+            margin-top: 20vh;
+        }
+
+        /* Styling for form elements */
+        form label {
+            font-weight: bold;
+        }
+
+        form select, form input[type="date"] {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #060101;
+            border-radius: 4px;
+        }
+
+        form button {
+            background-color: #333;
+            color: #fefefe;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+            margin: 5px;
+        }
+
+        form button:hover {
+            background-color: #555;
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .modal-content button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .modal-content button:hover {
+            background-color: #555;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="./indexfull.html">Vehicle Servicing App</a></h1>
+    </header>
+    
+    <div class="service-form-container">
+        <center><h2>Book a Service</h2></center>
+        <form id="serviceForm">
+            <label for="vehicleType">MOTORCYCLE</label><br>
+            
+            <label for="serviceType">Select Service Type:</label>
+            <select id="serviceType" name="serviceType">
+                <option value="oilChange">Oil service</option>
+                <option value="tireRotation">Tyre change</option>
+                <option value="brakeService">Brake service</option>
+                <option value="battery changing">Battery changing</option>
+                <option value="others">Others</option>
+            </select>
+            
+            <label for="date">Select Date:</label>
+            <input type="date" id="date" name="date">
+            
+            <center>
+                <button type="submit">Book Service</button>
+                <button type="button" onclick="resetForm()">Cancel</button>
+            </center>
+        </form>
+    </div>
+
+    <!-- Modal for Successful Booking -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <p>Your service has been successfully booked!</p>
+            <button onclick="closeModal()">OK</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("serviceForm").addEventListener("submit", function (event) {
+                event.preventDefault(); // Prevent form submission
+                document.getElementById("successModal").style.display = "flex";
+            });
+        });
+
+        function closeModal() {
+            document.getElementById("successModal").style.display = "none";
+            document.getElementById("serviceForm").reset(); // Reset form after closing
+        }
+
+        function resetForm() {
+            document.getElementById("serviceForm").reset();
+        }
+    </script>
+</body>
+</html>
