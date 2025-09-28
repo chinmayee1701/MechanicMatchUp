@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Servicing App - Home</title>
+    <style>
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar styling */
+        .navbar {
+            background-color: #050505;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar h1 {
+            font-size: 24px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin: 0 15px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ffcc00;
+        }
+
+        /* Hero Section */
+        /* Hero Section */
+.hero {
+    background-image: url('https://png.pngtree.com/background/20220730/original/pngtree-car-service-illustration-repair-auto-picture-image_1882362.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /* Align content to the right */
+    text-align: right; /* Align text to the right */
+    color: white;
+    flex-direction: column;
+    padding: 20px;
+    padding-right: 50px; /* Add right padding for better positioning */
+}
+
+
+        .hero h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            position: right;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .hero button {
+            padding: 10px 20px;
+            font-size: 18px;
+            color: white;
+            background-color: #ffcc00;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .hero button:hover {
+            background-color: #e6b800;
+        }
+
+        /* Services Section */
+        .services {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #f4f4f4;
+        }
+
+        .services h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .service-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .service-box {
+            background-color: white;
+            padding: 20px;
+            margin: 10px;
+            width: 250px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .service-box h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        /* About Section */
+        .about {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #fff;
+        }
+
+        .about h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            font-size: 18px;
+            max-width: 800px;
+            margin: auto;
+            line-height: 1.5;
+        }
+
+        /* Contact Section */
+        .contact {
+            text-align: center;
+            padding: 10px 10px;
+            
+            color: black;
+        }
+
+        .contact h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .contact p {
+            font-size: 18px;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: px;
+            
+            color: white;
+        }
+        h2{
+            color: black;
+        }
+        .hero a{
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1>Vehicle Servicing</h1>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Reliable & Fast Vehicle Servicing</h2>
+        <p>Book your service online and get the best care for your vehicle.</p>
+        <button><a href="./indexfull.html">Book Now</a></button>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="service-list">
+            <div class="service-box">
+                <h3>Oil Service</h3>
+                <p>Get your vehicle's oil changed for a smooth drive.</p>
+            </div>
+            <div class="service-box">
+                <h3>Tyre Change</h3>
+                <p>New tyres for better grip and safety.</p>
+            </div>
+            <div class="service-box">
+                <h3>Brake Service</h3>
+                <p>Ensure your brakes are in top condition.</p>
+            </div>
+            <div class="service-box">
+                <h3>Battery Change</h3>
+                <p>Replace your car's battery hassle-free.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>We are dedicated to providing top-quality vehicle servicing with expert mechanics and modern tools. Your safety is our priority.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: mechanicmatchup@gmail.com | Phone: +91 98XXXXXXXX</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2023 Vehicle Servicing App. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
