@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Service Center</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://www.shutterstock.com/image-vector/seamless-auto-service-pattern-line-600nw-1698054280.jpg') center/cover no-repeat;
+        }
+
+        header {
+            background-color: #0e65bc;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: rgb(77, 77, 77);
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin: 0 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .intro h2 {
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+
+        .intro p {
+            font-size: 16px;
+        }
+
+        .intro img {
+            width: 150px;
+            height: auto;
+        }
+
+        .services {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: nowrap; /* Ensures all services stay in one row */
+        }
+
+        .service {
+            width: calc(25% - 20px); /* Ensures four items fit in one row */
+            background-color: #ead6a8;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            min-width: 200px;
+        }
+
+        .service h3 {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        .service a {
+            text-decoration: none;
+            color: black;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .social-media {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .footer1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+            margin-top: 15px;
+        }
+
+        .social-media a {
+            margin: 0 10px;
+        }
+
+        ion-icon {
+            width: 30px;
+            height: 30px;
+            color: white;
+        }
+
+        @media screen and (max-width: 900px) {
+            .services {
+                flex-wrap: wrap; /* Allow wrapping on smaller screens */
+            }
+            .service {
+                width: calc(50% - 20px); /* Two items per row on medium screens */
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .service {
+                width: 100%; /* One item per row on small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MECHANIC MATCHUP</h1>
+    </header>
+    
+    <nav>
+        <a href="./indexhome.html">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="container">
+        <div class="intro">
+            <img src="https://nz.rs-cdn.com/images/nws4d-ddxav/page/4dc2da21a64f31f3e72269b6e19f27c5__c617/zoom233x232z77000cw302.jpg" alt="Vehicle Service Logo"> 
+            <h2>Welcome to Our Vehicle Service Center</h2>
+            <p>We provide top-notch maintenance and repair services for your vehicles.</p>
+        </div>
+
+        <div class="services">
+            <div class="service">
+                <a href="indexcar.html"><h3>Car Service</h3></a>
+                <p>The key to your car’s longevity is in our hands.</p>
+            </div>
+            <div class="service">
+                <a href="indexmotor.html"><h3>Motorcycle</h3></a>
+                <p>Restore Your Bike to Top Performance with Our Assistance.</p>
+            </div>
+            <div class="service">
+                <a href="indextruck.html"><h3>Truck Service</h3></a>
+                <p>Keep on truckin' with our trustworthy repairs.</p>
+            </div>
+            <div class="service">
+                <a href="indexevehicle.html"><h3>E-Vehicle</h3></a>
+                <p>Forget the Pump, Plug into the Future.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer1">
+            <h4>All you get is here</h4>
+            <p>Connect with us on social media</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="https://in.linkedin.com/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+                <a href="https://www.youtube.com/" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+                <a href="https://twitter.com/" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="https://www.instagram.com/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/@ionic/core@latest/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://unpkg.com/@ionic/core@latest/dist/ionic/ionic.js"></script>
+</body>
+</html>
